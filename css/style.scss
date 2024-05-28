@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    body {
+        background-color:rgb(255, 234, 231);
+    
+        h2 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 3em;
+            color: #2e2c32;
+            text-align: center;
+        }
+
+        .datepicker {
+            width: 300px;
+            padding: 5px;
+            background-color: azure;
+        }
+    
+        #map {
+            margin: 40px 0;
+            height: 400px;
+            width: 70vw;
+        }
+
+        .swiper {
+            width: 600px;
+            height: 300px;
+        }
+    }
+}
