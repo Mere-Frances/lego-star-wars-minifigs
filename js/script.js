@@ -1,3 +1,4 @@
+/*jshint esversion: 6*/
 alert('working');
 // mapbox token
 // mapboxgl.accessToken = "mapbox access token link here";
