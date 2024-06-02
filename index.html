@@ -4,58 +4,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- mapbox -->
-    <link href="https://api.mapbox.com/mapbox-gl-js/v3.4.0/mapbox-gl.css" rel="stylesheet" />
-    <!-- swiper -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- jquery ui-->
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.3/themes/smoothness/jquery-ui.css">
+    <!-- fullpage -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.css"
+        integrity="sha512-AIwt5sjXSKDo4t0KSQ/eAuy43kQMc1hYtIKLxaFrHd26nQFzMo1FJdBIickVyGXnhm2xB2OOYBqMBgu3dBU4KA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- custom css -->
     <!-- <link rel="stylesheet" href="./css/style.scss"> -->
     <link rel="stylesheet" href="./css/style.min.css">
 
-    <title>Boilerplate</title>
+    <title>Mini-Figs</title>
 </head>
 
 <body>
-    <h2>My Boilerplate</h2>
 
-    <!-- MAP-->
-    <div id="map"></div>
-
-    <!-- SWIPER -->
-    <div class="swiper">
-        <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">Slide One</div>
-            <div class="swiper-slide">Slide Two</div>
-            <div class="swiper-slide">Slide Three</div>
+    <!-- fullpage container YOU NEED ALWAYS-->
+    <div id="fullpage" class="fullpage-container">
+        <!-- sections for the verticals - NEED ATLEAST 1 -->
+        <div class="section section-1">
+            <!-- Slides go inside a section -->
+            <div class="slide">
+                <h2>Welcome</h2>
+                <form id="signupForm">
+                    <input type="text" id="username" placeholder="Username" required>
+                    <input type="email" id="email" placeholder="Email" required>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <button id="submitButton" class="form-button" type="submit">Sign Up</button>
+                </form>
+                <div id="formMessage"></div>
+            </div>
+            <div class="slide">Slide 2</div>
+            <div class="slide">Slide 3</div>
+            <div class="slide">Slide 4</div>
         </div>
-
-        <!-- pagination -->
-        <div class="swiper-pagination"></div>
-
-        <!-- navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-
-        <!-- scrollbar -->
-        <div class="swiper-scrollbar"></div>
+    </div>
+    <div class="section section-2">section 2</div>
+    <div class="section section-3">section 3</div>
+    <div class="section section-4">section 4</div>
+    <!-- slides for the horizontals -->
     </div>
 
-    <!-- DATEPICKER -->
-    <input type="text" id="datepicker" class="datepicker">
+    <!-- fixed buttons for the dif sections -->
+    <div class="navigation-buttons">
+        <button id="goToSection1">Go to the next section</button>
+        <button id="goToSection2">Go to the next section</button>
+        <button id="goToSection3">Go to the next section</button>
+        <button id="goToSection4">Go to the next section</button>
+    </div>
+
+    <!-- Fixed buttons to go to slides (Section 1) -->
+    <div class="slide-buttons">
+        <button id="goToSlide1">Slide 1</button>
+        <button id="goToSlide2">Slide 2</button>
+        <button id="goToSlide3">Slide 3</button>
+        <button id="goToSlide4">Slide 4</button>
+    </div>
+
+    <div class="product-container">
+        <div class="filters">
+            <div class="filter-block"></div>
+            <div class="filter-block"></div>
+            <div class="filter-block"></div>
+            <div class="filter-block"></div>
+        </div>
+        <div id="products" class="products"></div>
+    </div>
+
+
 
 
 
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/40be05a600.js" crossorigin="anonymous"></script>
-
-    <!-- mapbox -->
-    <script src="https://api.mapbox.com/mapbox-gl-js/v3.4.0/mapbox-gl.js"></script>
-
-    <!-- swiper -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -63,8 +84,15 @@
     <!-- jquery ui -->
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.3/jquery-ui.min.js"></script>
 
+    <!-- full page -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.js"
+        integrity="sha512-yHHLi2ZwgtW9QNVZd0asqMyWGJ6Kx73ijKlGWSi3MwYFB5ZzOJV8wPtopKr6muHk5SERgF3OB/2dZj3StlI34w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.extensions.min.js" integrity="sha512-0xW5KFMtT462F65vVvIejNawM1U2Fp/yhItmQVFUwdYP+R9tQFCn4QtLEhkp6RoGovZ6YCvbxy+GVCtGv0+nvA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
     <!-- custom js -->
     <script src="./js/script.js"></script>
 
 </body>
+
 </html>
