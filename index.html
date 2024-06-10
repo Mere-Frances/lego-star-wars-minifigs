@@ -19,24 +19,178 @@
 
 <body>
 
+    <nav>
+        <div class="navbar">
+            <div class="logo-container">
+            </div>
+            <!-- Fixed buttons to go to slides (Section 1) -->
+            <div class="slide-buttons">
+                <i id="goToSlide1" class="fa-solid fa-jedi"></i>
+                <div id="homeIcon" class="popup-icon">
+                    <p>Home</p>
+                </div>
+                <i id="goToSlide2" class="fa-solid fa-rocket"></i>
+                <div id="shopIcon" class="popup-icon">
+                    <p>Search</p>
+                </div>
+                <i id="goToSlide3" class="fa-solid fa-binoculars"></i>
+                <div id="searchIcon" class="popup-icon">
+                    <p>Catalog</p>
+                </div>
+                <i id="goToSlide4" class="fa-solid fa-heart"></i>
+                <div id="likeIcon" class="popup-icon">
+                    <p>Saved</p>
+                </div>
+                <i class="fa-solid fa-gamepad"></i>
+            </div>
+            <div class="profile-container">
+            </div>
+        </div>
+    </nav>
+
     <!-- fullpage container YOU NEED ALWAYS-->
     <div id="fullpage" class="fullpage-container">
         <!-- sections for the verticals - NEED ATLEAST 1 -->
         <div class="section section-1">
             <!-- Slides go inside a section -->
             <div class="slide">
-                <h2>Welcome</h2>
-                <form id="signupForm">
-                    <input type="text" id="username" placeholder="Username" required>
-                    <input type="email" id="email" placeholder="Email" required>
-                    <input type="password" id="password" placeholder="Password" required>
-                    <button id="submitButton" class="form-button" type="submit">Sign Up</button>
-                </form>
-                <div id="formMessage"></div>
+                <div class="slide-header">
+                    <p>Welcome to</p>
+                    <h4>The Minifig Archive</h4>
+                </div>
+                <div class="tile" style="transform:none;">
+                    <div class="copy center black">
+                        <div class="marquee">
+                            <div class="marqueeBlocks">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="marquee2">
+                            <div class="marqueeBlocks">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="slide">Slide 2</div>
-            <div class="slide">Slide 3</div>
-            <div class="slide">Slide 4</div>
+            <div class="slide">
+                <div class="product-container">
+                    <div class="block-top">
+                        <div class="block-heads"></div>
+                        <div class="block-heads"></div>
+                        <div class="block-heads"></div>
+                        <div class="block-heads"></div>
+                    </div>
+                    <div class="sort">
+                        <div class="filters">
+                            <div class="sort-block" id="sithJedi">
+                                Sith & Jedi
+                            </div>
+                            <div class="sort-block" id="clones">
+                                Clones
+                            </div>
+                            <div class="sort-block" id="mandalorians">
+                                Mandalorians
+                            </div>
+                            <div class="sort-block" id="droids">
+                                Droids
+                            </div>
+                            <div class="coolinput">
+                                <label for="input" class="text"><i class="fa-solid fa-magnifying-glass"></i></label>
+                                <input type="text" placeholder="Search for more" name="input" class="input">
+                            </div>
+                        </div>
+                        <div class="filters sort-filters">
+                            <div id="sortPop" class="filter-block">
+                                Most popular
+                            </div>
+                            <div id="sortAlpha" class="filter-block">
+                                Alphabetical
+                            </div>
+                            <div id="priceMin" class="filter-block">
+                                Lowest Price
+                            </div>
+                            <div id="priceMax" class="filter-block">
+                                Highest price
+                            </div>
+                            <div id="modal-container">
+                                <div class="modal-background">
+                                    <div id="modalInner" class="modal">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="products" class="products"></div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-3-container">
+                    <h2 class="slide-3-header">Beyond The Bricks</h2>
+                    <p class="slide-3-subheader">A universe where imagination knows no bounds</p>
+                    <div class="grid-parent">
+                        <div class="grid-item item-1"></div>
+                        <div class="grid-item item-2"></div>
+                        <div class="grid-item item-3"></div>
+                        <div class="grid-item item-4">
+                            <h3>The Genesis of LEGO Star Wars</h3>
+                            <p>The story of LEGO Star Wars began in 1999, marking the first time LEGO ventured into
+                                licensing territory. The initial release featured 13 sets based on the
+                                original trilogy and the then-upcoming prequel, "The Phantom Menace." Among these sets,
+                                the iconic X-Wing Fighter and the Millennium Falcon captured the imaginations of fans,
+                                young and old. This collaboration not only revitalized the LEGO brand but also expanded
+                                the Star Wars universe into the realm of interactive play, allowing fans to build and
+                                relive their favorite scenes brick by brick.</p>
+                        </div>
+                        <div class="grid-item item-5"></div>
+                        <div class="grid-item item-6"></div>
+                        <div class="grid-item item-7">
+                            <h3>A Galactic Treasure</h3>
+                            <p>The 14k Gold C-3PO, released in 2007 to celebrate Star Wars' 30th anniversary, is the
+                                rarest LEGO Star Wars minifigure, with only five ever produced. Encased in custom
+                                display boxes and randomly inserted into sets worldwide, it embodies both the luxury of
+                                LEGO collecting and a nostalgic tribute to a beloved character.</p>
+                        </div>
+                        <div class="grid-item item-8"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="loved-container">
+                    <div class="grogu"></div>
+                    <div class="loved-products-title">
+                        <h4>My liked minifigs</h4>
+                    </div>
+                    <div id="lovedContainer" class="loved-products">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="section section-2">section 2</div>
@@ -45,42 +199,13 @@
     <!-- slides for the horizontals -->
     </div>
 
-    <!-- fixed buttons for the dif sections -->
-    <div class="navigation-buttons">
-        <button id="goToSection1">Go to the next section</button>
-        <button id="goToSection2">Go to the next section</button>
-        <button id="goToSection3">Go to the next section</button>
-        <button id="goToSection4">Go to the next section</button>
-    </div>
-
-    <!-- Fixed buttons to go to slides (Section 1) -->
-    <div class="slide-buttons">
-        <button id="goToSlide1">Slide 1</button>
-        <button id="goToSlide2">Slide 2</button>
-        <button id="goToSlide3">Slide 3</button>
-        <button id="goToSlide4">Slide 4</button>
-    </div>
-
-    <div class="product-container">
-        <div class="filters">
-            <div class="filter-block"></div>
-            <div class="filter-block"></div>
-            <div class="filter-block"></div>
-            <div class="filter-block"></div>
-        </div>
-        <div id="products" class="products"></div>
-    </div>
-
-
-
 
 
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/40be05a600.js" crossorigin="anonymous"></script>
 
     <!-- jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <!-- jquery ui -->
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.3/jquery-ui.min.js"></script>
 
@@ -88,7 +213,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.js"
         integrity="sha512-yHHLi2ZwgtW9QNVZd0asqMyWGJ6Kx73ijKlGWSi3MwYFB5ZzOJV8wPtopKr6muHk5SERgF3OB/2dZj3StlI34w=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.extensions.min.js" integrity="sha512-0xW5KFMtT462F65vVvIejNawM1U2Fp/yhItmQVFUwdYP+R9tQFCn4QtLEhkp6RoGovZ6YCvbxy+GVCtGv0+nvA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.extensions.min.js" integrity="sha512-0xW5KFMtT462F65vVvIejNawM1U2Fp/yhItmQVFUwdYP+R9tQFCn4QtLEhkp6RoGovZ6YCvbxy+GVCtGv0+nvA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
 
     <!-- custom js -->
     <script src="./js/script.js"></script>
