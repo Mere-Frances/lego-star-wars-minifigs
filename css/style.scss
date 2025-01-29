@@ -1197,3 +1197,41 @@ body.modal-open {
         }
     }
 }
+
+@media only screen and (max-width: 1440px) {
+    nav {
+        width: 12vw;
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    nav {
+        width: 15vw;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    nav {
+        width: 100%;
+        height: fit-content;
+        margin-top: 5vw;
+        .navbar {
+            flex-direction: row;
+            align-items: center;
+            width: 90%;
+            height: 15vw;
+            padding: 2vw;
+            .slide-buttons {
+                flex-direction: row;
+                i{
+                    font-size: 4vw;
+                }
+            }
+            .logo-container, .profile-container{
+                width: 12vw;
+                height: 12vw;
+                background-size: contain;
+            }
+        }
+    }
+  }
